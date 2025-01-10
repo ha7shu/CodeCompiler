@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* PrismJS theme overrides for dark mode */
+.prism-editor__textarea:focus {
+  outline: none;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6c7280;
+}
+
+.token.punctuation {
+  color: #e5e7eb;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #93c5fd;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #86efac;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #d1d5db;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #93c5fd;
+}
+
+.token.function,
+.token.class-name {
+  color: #fde047;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #f87171;
+}
