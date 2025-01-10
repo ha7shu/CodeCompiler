@@ -5,7 +5,12 @@ import SharedCode from './components/Editor/SharedCode';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter
+      future={{
+        v7_startTransition : true,
+        v7_relativeSplatPath: true,
+      }}
+    >
       <Routes>
         <Route path="/" element={<CodeEditor />} />
         <Route path="/code/:id" element={<SharedCode />} />
